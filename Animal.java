@@ -8,7 +8,10 @@ public abstract class Animal{
 
 	// CONSTRUCTOR
 	public Animal(String name){
+		// set name based on value passed by subclass constructor
 		this.name = name;
+
+		// set initial sleep status to true
 		this.is_sleep = true;
 	}
 

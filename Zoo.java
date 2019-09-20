@@ -2,13 +2,18 @@ import java.util.*;
 
 public class Zoo {
 
+	// MEMBERS
+
 	// this list will have each animal present in the zoo
 	private List<Animal> animals = new ArrayList<Animal>();
 
+	// zookeeper for the zoo - will be initalized during construction
 	private Zookeeper keeper;
 
-	// Constructor - instantiate each animal and add it to the list
+	// CONSTRUCTOR
 	public Zoo() {
+
+		// instantiate each animal and add it to the list
 		this.animals.add(new Dog("Doug"));
 		this.animals.add(new Dog("Dimmadome"));
 		this.animals.add(new Wolf("Warren"));
@@ -29,13 +34,17 @@ public class Zoo {
 		this.keeper = new Zookeeper(this.animals);
 	}
 
+	// METHODS
+
 	// on a day at the zoo, the zookeeper wakes and tends to all the animals - that's his job
 	public void simulateZooDay() {
 		this.keeper.doJob();
 	}
 
 
+	// the main method to run the program
 	public static void main(String[] args){
+
 		// create the zoo
 		Zoo zoo = new Zoo();
 

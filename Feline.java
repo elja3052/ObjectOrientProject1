@@ -2,7 +2,12 @@ import java.util.*;
 
 public abstract class Feline extends Animal {
 
+    // MEMBERS
+
+    // empty list to hold the behaviors for felines - initialized during construction
     protected ArrayList<String> behaviors;
+
+    // CONSTRUCTOR
 
     public Feline(String name) {
 
@@ -12,13 +17,16 @@ public abstract class Feline extends Animal {
         // initalize list of behaviors
         this.behaviors = new ArrayList<String>(
                 Arrays.asList(
-                        this.name + "," + " the feline paces around.",
-                        this.name + "," + " the feline stretches.",
-                        this.name + "," + " the feline chases its tail.",
-                        this.name + "," + " the feline plays with a toy."
+                        this.name + " the feline paces around.",
+                        this.name + " the feline stretches.",
+                        this.name + " the feline chases its tail.",
+                        this.name + " the feline plays with a toy."
                 ));
     }
 
+    // METHODS
+
+    // each feline roams based on a random action from its list of behaviros
     public void roam() {
 
         // only performs actions when not asleep

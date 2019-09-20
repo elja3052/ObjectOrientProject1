@@ -1,9 +1,13 @@
 public class Cat extends Feline {
 
+    // CONSTRUCTOR
+
     // call super class constructor with the cat's name
     public Cat(String name) {
         super(name);
     }
+
+    // METHODS
 
     // cat can only eat when awake
     public void eat(String food) {
@@ -15,7 +19,7 @@ public class Cat extends Feline {
     // can can only make noise when awake
     public void makeNoise() {
         if (!this.is_sleep) {
-            System.out.println(this.name + "meows.");
+            System.out.println(this.name + " meows.");
         }
     }
 }
