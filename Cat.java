@@ -1,18 +1,21 @@
 public class Cat extends Feline {
 
+    // call super class constructor with the cat's name
     public Cat(String name) {
         super(name);
     }
 
+    // cat can only eat when awake
     public void eat(String food) {
         if (!this.is_sleep) {
-            System.out.println(this.name + "," + " the cat megerly nibbles on the " + food + ".");
+            System.out.println(this.name + " the cat megerly nibbles on the " + food + ".");
         }
     }
 
+    // can can only make noise when awake
     public void makeNoise() {
         if (!this.is_sleep) {
-            System.out.println(this.name + "," + "meows.");
+            System.out.println(this.name + "meows.");
         }
     }
 }

@@ -5,11 +5,11 @@ public class Wolf extends Canine{
 	}
 
 	public void eat(String food){
-		System.out.println(this.name + " the Wolf eagerly snarfs down the " + food);
+		System.out.println(this.name + " the Wolf eagerly snarfs down the " + food  + ".");
 	}
 
 	public void makeNoise(){
-		System.out.println(this.name + " howls into the sky");
+		System.out.println(this.name + " howls into the sky.");
 	}
 
 }

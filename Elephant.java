@@ -5,11 +5,11 @@ public class Elephant extends Pachyderm{
 	}
 
 	public void eat(String food){
-		System.out.println(this.name + " the Elephant shlurps up the " + food + " with its trunk");
+		System.out.println(this.name + " the Elephant shlurps up the " + food + " with its trunk.");
 	}
 
 	public void makeNoise(){
-		System.out.println(this.name + " trumpets its trunk");
+		System.out.println(this.name + " trumpets its trunk.");
 	}
 
 }

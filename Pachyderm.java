@@ -5,7 +5,7 @@ public abstract class Pachyderm extends Animal{
 		}
 
 		public void roam(){
-			System.out.println(this.name + " the Pachyderm walks with immense weight");
+			System.out.println(this.name + " the Pachyderm walks with immense weight.");
 		}
 
 }

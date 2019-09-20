@@ -5,11 +5,11 @@ public class Hippo extends Pachyderm{
 	}
 
 	public void eat(String food){
-		System.out.println(this.name + " the Hippo chomps the " + food);
+		System.out.println(this.name + " the Hippo chomps the " + food + ".");
 	}
 
 	public void makeNoise(){
-		System.out.println(this.name + " grunts");
+		System.out.println(this.name + " grunts.");
 	}
 
 }

@@ -5,6 +5,6 @@ public abstract class Canine extends Animal{
 		}
 
 		public void roam(){
-			System.out.println(this.name + " the Canine walks leisurely on four legs");
+			System.out.println(this.name + " the Canine walks leisurely on four legs.");
 		}
 }
