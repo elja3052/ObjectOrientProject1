@@ -1,3 +1,5 @@
+import java.io.*
+
 public abstract class Animal {
 
 	// MEMBERS
@@ -7,19 +9,21 @@ public abstract class Animal {
 
 	// CONSTRUCTOR
 	public Animal(String name){
-		this.name = name
+		this.name = name;
 	}
 
 
 	// METHODS
 	public void sleep() {
 		if (!this.is_sleep){
+			System.out.println(this.name + " goes to sleep.")
 			this.is_sleep = True;
 		}
 	}
 
 	public void wakeup() {
 		if (this.is_sleep){
+			System.out.println(this.name + " wakes up.")
 			this.is_sleep = False;
 		}
 	}
