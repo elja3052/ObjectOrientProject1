@@ -19,12 +19,18 @@ public abstract class Animal {
 			System.out.println(this.name + " goes to sleep.")
 			this.is_sleep = True;
 		}
+		else {
+			System.out.println(this.name + " is already asleep!")
+		}
 	}
 
 	public void wakeup() {
 		if (this.is_sleep){
 			System.out.println(this.name + " wakes up.")
 			this.is_sleep = False;
+		}
+		else {
+			System.out.println(this.name + " is already asleep!")
 		}
 	}
 
