@@ -1,7 +1,4 @@
-
-
-import java.io.*;
-import java.uitl.*;
+import java.util.*;
 
 public abstract class Feline extends Animal {
 
@@ -9,7 +6,6 @@ public abstract class Feline extends Animal {
         super(name);
     }
 
-    @Override
     public void roam() {
 
         if (!this.is_sleep) {
@@ -26,7 +22,7 @@ public abstract class Feline extends Animal {
             // https://stackoverflow.com/questions/8065532/how-to-randomly-pick-an-element-from-an-array
             Random rand = new Random();
 
-            String rand_behavior = this.behaviors[rand.nextInt(behaviors.length)];
+            String rand_behavior = behaviors.get(rand.nextInt(behaviors.size()));
 
             System.out.println(rand_behavior);
         }

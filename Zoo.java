@@ -1,11 +1,4 @@
-import Zookeeper;
-import Dog;
-import Wolf;
-import Cat;
-import Lion;
-import Rhino;
-import Elephant;
-import Hippo;
+import java.util.*;
 
 public class Zoo {
 
@@ -48,8 +41,13 @@ public class Zoo {
 		this.keeper = new Zookeeper(this.animals);
 	}
 
-	public static void main(){
+	public void simulateZooDay() {
 		this.keeper.doJob();
+	}
+
+	public static void main(String[] args){
+		Zoo zoo = new Zoo();
+		zoo.simulateZooDay();
 	}
 
 }

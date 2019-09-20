@@ -1,12 +1,11 @@
-import Animal;
-import java.io.*
+import java.util.*;
 
 public class Zookeeper {
 
 	private List<Animal> animals;
 
 	public Zookeeper(List<Animal> animals){
-		this.animals = animalsl;
+		this.animals = animals;
 	}
 
 	public void doJob(){

@@ -1,6 +1,4 @@
-import java.io.*
-
-public abstract class Animal {
+public abstract class Animal{
 
 	// MEMBERS
 	protected Boolean is_sleep;
@@ -10,27 +8,28 @@ public abstract class Animal {
 	// CONSTRUCTOR
 	public Animal(String name){
 		this.name = name;
+		this.is_sleep = true;
 	}
 
 
 	// METHODS
 	public void sleep() {
 		if (!this.is_sleep){
-			System.out.println(this.name + " goes to sleep.")
-			this.is_sleep = True;
+			System.out.println(this.name + " goes to sleep.");
+			this.is_sleep = true;
 		}
 		else {
-			System.out.println(this.name + " is already asleep!")
+			System.out.println(this.name + " is already asleep!");
 		}
 	}
 
 	public void wakeup() {
 		if (this.is_sleep){
-			System.out.println(this.name + " wakes up.")
-			this.is_sleep = False;
+			System.out.println(this.name + " wakes up.");
+			this.is_sleep = false;
 		}
 		else {
-			System.out.println(this.name + " is already asleep!")
+			System.out.println(this.name + " is already asleep!");
 		}
 	}
 

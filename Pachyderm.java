@@ -1,6 +1,3 @@
-import Animal.Animal
-import java.io.*
-
 public abstract class Pachyderm extends Animal{
 
 		public Pachyderm(String name){

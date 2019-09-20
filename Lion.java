@@ -1,6 +1,3 @@
-
-import java.io.*;
-
 public class Lion extends Feline {
 
     public Lion(String name) {

@@ -1,6 +1,3 @@
-import Animal.Animal
-import java.io.*
-
 public abstract class Canine extends Animal{
 
 		public Canine(String name){
@@ -10,5 +7,4 @@ public abstract class Canine extends Animal{
 		public void roam(){
 			System.out.println(this.name + " the Canine walks leisurely on four legs");
 		}
-
 }
